@@ -21,3 +21,12 @@ html-parser
 regex
 tiktoken
 openai[embeddings]
+langchain
+dotenv
+sentence_transformers
+tiktoken
+pdfminer.six
+openai
+faiss-cpu
+faiss
+unstructured
