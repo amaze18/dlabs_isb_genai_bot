@@ -28,7 +28,7 @@ def layout(*args):
     <style>
       # MainMenu {visibility: hidden;}
       footer {visibility: hidden;}
-     .stApp { bottom: 105px; }
+     .stApp { bottom: 75px; }
     </style>
     """
     style_div = styles(
@@ -36,7 +36,7 @@ def layout(*args):
         left=0,
         bottom=0,
         margin=px(0, 0, 0, 0),
-        width=percent(100),
+        width=percent(80),
         color="black",
         text_align="center",
         height="auto",
@@ -160,7 +160,7 @@ def footer():
     " with ❤️ by ",
     link("https://www.linkedin.com/in/anupamisb/", "@Anupam"),
     br(),
-    link("https://i-venture.org/", "ISB"),
+  #  link("https://i-venture.org/", "ISB"),
       #   image('https://i.imgur.com/thJhzOO.png')),
     ]
     layout(*myargs)
