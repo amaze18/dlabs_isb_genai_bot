@@ -8,6 +8,28 @@ from qa import answer_question
 #from hugchat import hugchat
 #from hugchat.login import Login
 import os
+from htbuilder import HtmlElement, div, ul, li, br, hr, a, p, img, styles, classes, fonts
+from htbuilder.units import percent, px
+from htbuilder.funcs import rgba, rgb
+
+
+def image(src_as_string, **style):
+    return img(src=src_as_string, style=styles(**style))
+
+
+def link(link, text, **style):
+    return a(_href=link, _target="_blank", style=styles(**style))(text)
+
+
+def layout(*args):
+
+    style = """
+    <style>
+      # MainMenu {visibility: hidden;}
+      footer {visibility: hidden;}
+     .stApp { bottom: 105px; }
+    </style>
+    """
 
 from PIL import Image
 
@@ -88,5 +110,5 @@ if st.session_state.messages[-1]["role"] != "assistant":
             st.write(response) 
     message = {"role": "assistant", "content": response}
     st.session_state.messages.append(message)
-st.footer('Developed with love by [Anupam](https://www.linkedin.com/in/anupamisb/)!!', icon='✅')
+st.footer('Developed with love by [Anupam](https://www.linkedin.com/in/anupamisb/)!!')
     
