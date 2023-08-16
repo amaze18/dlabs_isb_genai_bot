@@ -28,7 +28,7 @@ def layout(*args):
     <style>
       # MainMenu {visibility: hidden;}
       footer {visibility: hidden;}
-     .stApp { bottom: 75px; }
+     .stApp { bottom: 105px; }
     </style>
     """
     style_div = styles(
@@ -36,11 +36,11 @@ def layout(*args):
         left=0,
         bottom=0,
         margin=px(0, 0, 0, 0),
-        width=percent(80),
+        width=percent(100),
         color="black",
         text_align="center",
         height="auto",
-        opacity=0
+        opacity=1
     )
 
     style_hr = styles(
