@@ -116,7 +116,7 @@ myargs = [
     " with ❤️ by ",
     link("https://www.linkedin.com/in/anupamisb/", "@Anupam"),
     br(),
-    link("https://www.linkedin.com/in/anupamisb/"),
+    link("https://i-venture.org/", "ISB"),
       #   image('https://i.imgur.com/thJhzOO.png')),
 ]
 layout(myargs)
