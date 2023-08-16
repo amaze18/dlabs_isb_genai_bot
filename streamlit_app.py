@@ -35,10 +35,10 @@ def layout(*args):
         position="fixed",
         left=0,
         bottom=0,
-        margin=px(0, 0, 0, 0),
+        margin=px(0, 0, 2, 10),
         width=percent(100),
         color="blue",
-        text_align="center",
+        text_align="left",
         height="auto",
         opacity=1
     )
