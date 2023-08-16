@@ -27,7 +27,7 @@ def layout(*args):
     style = """
     <style>
       # MainMenu {visibility: hidden;}
-      footer {visibility: hidden;}
+      footer {visibility: display;}
      .stApp { bottom: 105px; }
     </style>
     """
