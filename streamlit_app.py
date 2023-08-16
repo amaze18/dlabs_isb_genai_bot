@@ -35,7 +35,7 @@ def layout(*args):
         position="fixed",
         left=0,
         bottom=0,
-        margin=px(0, 0, 0, 2),
+        margin=px(0, 0, 0, 50),
         width=percent(100),
         color="black",
         text_align="left",
