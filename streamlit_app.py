@@ -47,7 +47,7 @@ def layout(*args):
         display="block",
         margin=px(8, 8, "auto", "auto"),
         border_style="inset",
-        border_width=px(2)
+        border_width=px(1.5)
     )
 
     body = p()
@@ -153,6 +153,14 @@ if st.session_state.messages[-1]["role"] != "assistant":
     st.session_state.messages.append(message)
 
 
+myargs = [
+    "Made in India",""
+    " with ❤️ by ",
+    link("https://www.linkedin.com/in/anupamisb/", "@Anupam"),
+     br(),
+     link("https://i-venture.org/chatbot/", "ISB ChatBoT"),
+    ]
+
 def footer():
     myargs = [
     "Made in India",""
@@ -164,5 +172,5 @@ def footer():
     ]
     layout(*myargs)
 
-
+layout(*myargs)
 footer()
