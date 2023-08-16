@@ -110,5 +110,13 @@ if st.session_state.messages[-1]["role"] != "assistant":
             st.write(response) 
     message = {"role": "assistant", "content": response}
     st.session_state.messages.append(message)
-st.footer('Developed with love by [Anupam](https://www.linkedin.com/in/anupamisb/)!!')
-    
+myargs = [
+    "Made in ",
+    image('https://avatars3.githubusercontent.com/u/45109972?s=400&v=4',
+          width=px(25), height=px(25)),
+    " with ❤️ by ",
+    link("https://www.linkedin.com/in/anupamisb/", "@Anupam"),
+    br(),
+    link("https://www.linkedin.com/in/anupamisb/", image('https://i.imgur.com/thJhzOO.png')),
+]
+layout(myargs)
