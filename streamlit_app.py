@@ -165,10 +165,10 @@ def footer():
     myargs = [
     "Made in India",""
     " with ❤️ by ",
-    link("https://www.linkedin.com/in/anupamisb/", "@Anupam for"),
-    link("https://i-venture.org/chatbot/", "ISB ChatBoT"),
+    link("https://www.linkedin.com/in/anupamisb/", " Anupam for "),
+    link("https://i-venture.org/chatbot/", "I-Venture @ ISB"),
     ]
     layout(*myargs)
 
-layout(*myargs)
+#layout(*myargs)
 footer()
