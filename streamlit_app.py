@@ -136,7 +136,7 @@ background-size: cover;
 </style>
 '''
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+#st.markdown(page_bg_img, unsafe_allow_html=True)
 
 if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
