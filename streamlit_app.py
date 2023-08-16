@@ -40,7 +40,7 @@ def layout(*args):
         color="black",
         text_align="center",
         height="auto",
-        opacity=1
+        opacity=0
     )
 
     style_hr = styles(
