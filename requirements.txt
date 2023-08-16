@@ -26,5 +26,5 @@ sentence_transformers
 tiktoken
 pdfminer.six
 openai
-faiss
+faiss-cpu
 unstructured
