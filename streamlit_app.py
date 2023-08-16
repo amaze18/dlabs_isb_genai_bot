@@ -18,17 +18,18 @@ openai.api_key = SECRET_TOKEN
 
 # App title
 st.set_page_config(page_title="🤗💬 I-Venture @ ISB AI-Chat Bot")
-st.write("I-Venture @ ISB Chat Bot")
-image = Image.open('isbdlabs.jpg')
-st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels='RGB', output_format='auto')
-#
+st.header("I-Venture @ ISB AI-Chat Bot")
+
 # Hugging Face Credentials
 with st.sidebar:
     st.title('🤗💬I-Venture @ ISB Chat Bot')
-    st.success('Access to this Gen-AI Powered Chatbot is provided by Anupam [website](https://github.com/amaze18)!!', icon='✅')
+    st.success('Access to this Gen-AI Powered Chatbot is provided by  [Anupam](https://www.linkedin.com/in/anupamisb/)!!', icon='✅')
     hf_email = 'anupam_purwar2019@pgp.isb.edu'
     hf_pass = 'PASS'
     st.markdown('📖 This app is hosted by I-Venture @ ISB [website](https://i-venture.org/)!')
+    image = Image.open('isbdlabs.jpg')
+    st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels='RGB', output_format='auto')
+#
     
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
@@ -54,6 +55,12 @@ def generate_response(prompt_input, email, passwd):
              if (ans=='I don\'t know.'  or ans=='I don\'t know'  or ans== 'I could not find an answer.' or 'I could not find' in ans or ' I couldn\'t find'  in ans  ):
                question=question0+ " I-Venture @ ISB"
                ans=answer_question(question)
+               if (ans=='I don\'t know.'  or ans=='I don\'t know'  or ans== 'I could not find an answer.' or 'I could not find' in ans or ' I couldn\'t find'  in ans  ):
+                   question=question0+ "Dlabs ISB"
+                   ans=answer_question(question)
+                   if (ans=='I don\'t know.'  or ans=='I don\'t know'  or ans== 'I could not find an answer.' or 'I could not find' in ans or ' I couldn\'t find'  in ans  ):
+                       question=question0+ "Indian School of Business"
+                       ans=answer_question(question)
      return ans
 
 # User-provided prompt
@@ -81,3 +88,5 @@ if st.session_state.messages[-1]["role"] != "assistant":
             st.write(response) 
     message = {"role": "assistant", "content": response}
     st.session_state.messages.append(message)
+st.footer('Developed with love by [Anupam](https://www.linkedin.com/in/anupamisb/)!!', icon='✅')
+    
