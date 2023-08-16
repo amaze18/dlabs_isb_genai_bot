@@ -156,12 +156,8 @@ if st.session_state.messages[-1]["role"] != "assistant":
 def footer():
     myargs = [
     "Made in India",
-   # image('https://i.imgur.com/thJhzOO.png',width=px(25), height=px(25)),
     " with ❤️ by ",
     link("https://www.linkedin.com/in/anupamisb/", "@Anupam"),
-    br(),
-  #  link("https://i-venture.org/", "ISB"),
-      #   image('https://i.imgur.com/thJhzOO.png')),
     ]
     layout(*myargs)
 
