@@ -22,7 +22,6 @@ regex
 tiktoken
 openai[embeddings]
 langchain
-dotenv
 sentence_transformers
 tiktoken
 pdfminer.six
