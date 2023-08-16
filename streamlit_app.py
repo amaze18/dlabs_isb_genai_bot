@@ -155,9 +155,12 @@ if st.session_state.messages[-1]["role"] != "assistant":
 
 def footer():
     myargs = [
-    "Made in India",
+    "Made in India",""
     " with ❤️ by ",
     link("https://www.linkedin.com/in/anupamisb/", "@Anupam"),
+     br(),
+     link("https://i-venture.org/chatbot/", "ISB ChatBoT"),
+  
     ]
     layout(*myargs)
 
