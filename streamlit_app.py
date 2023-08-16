@@ -37,7 +37,7 @@ def layout(*args):
         bottom=0,
         margin=px(0, 0, 0, 0),
         width=percent(100),
-        color="black",
+        color="blue",
         text_align="left",
         height="auto",
         opacity=1
@@ -165,10 +165,8 @@ def footer():
     myargs = [
     "Made in India",""
     " with ❤️ by ",
-    link("https://www.linkedin.com/in/anupamisb/", "@Anupam"),
-     br(),
-     link("https://i-venture.org/chatbot/", "ISB ChatBoT"),
-  
+    link("https://www.linkedin.com/in/anupamisb/", "@Anupam for"),
+    link("https://i-venture.org/chatbot/", "ISB ChatBoT"),
     ]
     layout(*myargs)
 
