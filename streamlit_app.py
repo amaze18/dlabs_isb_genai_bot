@@ -38,7 +38,7 @@ def layout(*args):
         margin=px(0, 0, 0, 0),
         width=percent(100),
         color="blue",
-        text_align="left",
+        text_align="center",
         height="auto",
         opacity=1
     )
