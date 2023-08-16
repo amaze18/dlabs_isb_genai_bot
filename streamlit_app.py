@@ -112,7 +112,7 @@ if st.session_state.messages[-1]["role"] != "assistant":
     st.session_state.messages.append(message)
 myargs = [
     "Made in ",
-    image('https://avatars3.githubusercontent.com/u/45109972?s=400&v=4',
+    image( Image.open('isbdlabs.jpg'),
           width=px(25), height=px(25)),
     " with ❤️ by ",
     link("https://www.linkedin.com/in/anupamisb/", "@Anupam"),
